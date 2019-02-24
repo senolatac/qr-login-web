@@ -1,0 +1,292 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.g-recaptcha {
+    transform:scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+}
+.langEnable{display:none;}
+.custom-select {
+    display: inline-block;
+    max-width: 100%;
+    height: calc(3.25rem + 2px);
+    padding: .375rem 1.75rem .375rem .75rem;
+    line-height: 1.25;
+    color: #464a4c;
+    vertical-align: middle;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20fill%3D%22%23555555%22%20%0A%09%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%22-261%20145.2%2024%2024%22%20style%3D%22enable-background%3Anew%20-261%20145.2%2024%2024%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20d%3D%22M-245.3%2C156.1l-3.6-6.5l-3.7%2C6.5%20M-252.7%2C159l3.7%2C6.5l3.6-6.5%22%2F%3E%0A%3C%2Fsvg%3E");
+	  padding-right: 25px;
+	  background-repeat: no-repeat;
+	  background-position: right center;
+    -webkit-background-size: 8px 10px;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-size: contain;
+    width: 100%;
+}
+
+.panel-group {
+    margin-bottom: 0!important;
+}
+
+.collapse-href-custom{
+	display: block;
+	width: 100%;
+}
+
+ul.msg_list li a .time1 {
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 700;
+    float: right;
+}
+
+.not-table>tbody>tr>td{
+	vertical-align: middle!important;
+}
+
+input{
+	border-radius: .25rem!important;
+}
+
+.pageEnable{
+	display: block!important;
+	opacity: 1;
+	height: auto;
+}
+
+.pageDisable{
+	transition: opacity 1s ease-out;
+    opacity: 0; 
+    display: none!important;
+}
+
+.page-title .title_left{
+	width: 100%!important;
+}
+
+.filterable {
+    margin-top: 15px;
+}
+.filterable .panel-heading .pull-right {
+    margin-top: -20px;
+}
+.filterable .filters input[disabled] {
+    background-color: transparent;
+    border: none;
+    cursor: auto;
+    box-shadow: none;
+    padding: 0;
+    height: auto;
+}
+.filterable .filters input[disabled]::-webkit-input-placeholder {
+    color: #333;
+}
+.filterable .filters input[disabled]::-moz-placeholder {
+    color: #333;
+}
+.filterable .filters input[disabled]:-ms-input-placeholder {
+    color: #333;
+}
+
+.material-switch{
+   margin-right: 5px;
+}
+
+.material-switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+    width: 40px;  
+}
+
+.material-switch > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    position:absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+.material-switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    left: -4px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+    background: inherit;
+    opacity: 0.5;
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;
+    left: 20px;
+}
+
+.filter-col{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.dropdown-menu{
+	min-width:100px!important;
+}
+
+.typeahead{
+	width: 100%;
+}
+
+.ekle-modal .modal-dialog {
+}
+
+#sil-modal .modal-dialog {
+    max-width: 300px;
+}
+
+.modal-title{
+	display: initial;
+	font-size: 18px;
+}
+
+.btn-choosen{
+	background-color: #ededed;
+}
+
+.btn-chosen img, .btn-not-choosen img{
+	    top: -1px;
+    position: relative;
+    width: 14px;
+    height: 14px;
+}
+
+.title-label{
+	font-size:14px!important;
+	position: relative;
+	top: -5px;
+}
+
+.glyphicon.spinning,.fa.spinning {
+    animation: spin 1s infinite linear;
+    -webkit-animation: spin2 1s infinite linear;
+}
+@keyframes spin {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(1) rotate(360deg);
+    }
+}
+@-webkit-keyframes spin2 {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }	
+} 
+
+@media (max-width: 350px){
+  .modal-dialog{
+  	width: 94%!important;
+  }
+  .filters .form-control{
+	padding: 0px;
+}
+.mobile-constraint{
+	display: none;
+}
+}
+
+@media (max-width: 450px){
+.panel-heading{
+	overflow: auto;
+}
+.panel-heading button{
+	width: 100%;
+}
+.panel-heading .pull-right{
+	width: 100%;
+}
+.visitor-name-label{
+	display: none;
+}
+}
+
+
+  
+  @media (max-width: 700px){
+.g-recaptcha {
+    transform:scale(.89);
+    -webkit-transform: scale(.89);
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+    overflow: hidden;
+    width:304px;
+}
+} 
+
+tags-input .tags {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+tags-input .tags.focused {
+  border-color: #66afe9;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
+}
+
+tags-input .tags .tag-item {
+  background: #428bca;
+  border: 1px solid #357ebd;
+  border-radius: 4px;
+  color: #fff;
+}
+
+tags-input .tags .tag-item.selected {
+  background: #d9534f;
+  border: 1px solid #d43f3a;
+  border-radius: 4px;
+  color: #fff;
+}
+
+tags-input .tags .tag-item button {
+  background: transparent;
+  color: #000;
+  opacity: .4;
+}
+tags-input .tags .tag-item .remove-button{
+	color: #fff;
+}
+.btn-filter.active{
+    background-color: #3698b5!important;
+    border-color: #3894af!important;
+}
+.from .timepicker-picker  table td  a span,
+.from .timepicker-picker  table td,
+.from .timepicker-picker  table td  span
+{height: 30px !important;line-height: 30px !important;width: 30px !important; line-height:30px !important; padding:0px !important;}
+.from .bootstrap-datetimepicker-widget.dropdown-menu {width: 120px !important;}
